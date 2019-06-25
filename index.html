@@ -1,131 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body {
-            font-family: "Arial", sans-serif;
-            margin: 0;
-        }
-
-        /* Style the header */
         .header {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-            padding: 50px;
-            text-align: center;
-            /* background: #1FAF86; */
             background: #9FCC2E;
             color: black;
-            border: 0;
-            margin: 0;
-        }
-
-        /* Increase the font size of the h1 element */
-        .header h1 {
-            font-size: 40px;
         }
 
         .sidenav {
-            height: 100%;
-            width: 15%;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
             /* background-color: #634327; */
             background-color: #000000;
-            overflow-x: hidden;
             padding-top: 10%;
         }
 
         .sidenav a {
-            margin-top: 20px;
-            margin-left: 15px;
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 18px;
             color: white;
-            display: block;
         }
 
         .sidenav a:hover {
             color: #9FCC2E;
         }
-
-        .main {
-            margin-left: 15%;
-            /* Same as the width of the sidenav */
-            font-size: 15px;
-            /* Increased text to enable scrolling */
-            padding: 0px 4%;
-        }
-
-        @media screen and (max-height: 450px) {
-            .sidenav {
-                padding-top: 15px;
-            }
-            .sidenav a {
-                font-size: 18px;
-            }
-        }
-
-        /* card */
-        a {
-            text-decoration: none;
-            font-size: 15px;
-            color: black;
-        }
     </style>
+    <title>Victor-Portifolio</title>
 </head>
 
 <body>
+    <div class="row">
+        <div class="col-md-2 sidenav">
+            <section>
+                <nav toggleable="md" class="col-sm-3 col-md-2 d-none d-md-block sidebar nav flex-column">
+                    <li class="nav-item active"><a href="#java" target="_self" class="nav-link active">JAVA</a></li>
+                    <li class="nav-item"><a href="#python" target="_self" class="nav-link">PYTHON</a></li>
+                    <li class="nav-item"><a href="#php" target="_self" class="nav-link">PHP</a></li>
+                </nav>
 
-    <div class="sidenav">
-        <a href="#java">JAVA</a>
-        <a href="#python">PYTHON</a>
-        <a href="#php">PHP</a>
-    </div>
-    <div class="header">
-        <h1>Victor-Portfolio</h1>
-        <p>A place to show some cool projects!</p>
-    </div>
-    <div class="main">
-        <div class="card">
-            <h4 id="java">JAVA</h4>
-            <h1>SAWI</h1>
-            <h3 style="color: grey">Selenium Automation Web Interface</h3>
-            <p>This is a template to give a start point to new or experienced programers base their automation code
-                using Selenium and Java.
-                It gives some read to use code, a well formated project structure and some hand code to print reports,
-                trow your customized execption, etc.
-                It also contain a web interface, if the final user wants to run the code using a desktop to run the
-                scripts.</p>
-            <p><a href="https://github.com/Victor-Portifolio/SAWI" target="_blank">See it on GIT &nbsp;<i class="fa fa-github"></i></a></p>
+                <nav class="navbar d-md-none fixed-top navbar-expand-md">
+                    <div id="nav_collapse" class="navbar-collapse collapse" style="display: none;">
+                        <ul class="navbar-nav align-middle">
+                            <li class="nav-item"><a href="#java" target="_self" class="nav-link">JAVA</a></li>
+                            <li class="nav-item"><a href="#python" target="_self" class="nav-link">PYTHON</a></li>
+                            <li class="nav-item"><a href="#php" target="_self" class="nav-link">PHP</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
         </div>
-        <br>
-        <div class="card">
-            <h4 id="python">PYTHON</h4>
+        <div class="col-md-10">
+            <div class="jumbotron text-center header" style="margin-bottom:0">
+                <h1>Victor-Portfolio</h1>
+                <p>A place to show some cool projects!</p>
+            </div>
+            </br>
+            <h5 id="java">JAVA</h5>
+            <h1>SAWI</h1>
+            <h5>Selenium Automation Web Interface</h5>
+            <p>This is a template to give a start point to new or experienced programers base their
+                automation
+                code using Selenium and Java. It gives some read to use code, a well formated project
+                structure and some hand code to print reports, trow your customized execption, etc.
+                It also contain a web interface, if the final user wants to run the code using a desktop
+                to run the
+                scripts.
+            </p>
+            <p><a href="https://github.com/Victor-Portifolio/SAWI" target="_blank">See it on GIT
+                    &nbsp;<i class="fa fa-github"></i></a></p>
+            <br>
+            <h5 id="python">PYTHON</h5>
             <h1>Linkedin scrapper</h1>
-            <h3 style="color: grey">Scrapps info from Linkedin pages</h3>
-            <p>This scrapper allows the user search for some people`s profile and do a scrap, including names and
-                positions
-                the users have in their companies, placing all this data into a spreadsheet file. All the collected
-                information
-                is public, this scrapper doesn't use any kind of exploit to get data.
+            <p>This scrapper allows the user search for some people`s profile and do a scrap, including
+                names
+                and positions the users have in their companies, placing all this data into a
+                spreadsheet file.
+                All the collected information is public, this scrapper doesn't use any kind of exploit
+                to get data.
+            </p>
+            <p><a href="#">See it on GIT &nbsp;<i class="fa fa-github"></i></a></p>
+            <br>
+            <h5 id="php">PHP</h5>
+            <h1>Troca Kid's</h1>
+            <p>Exchange used products page for kid's.
             </p>
             <p><a href="#">See it on GIT &nbsp;<i class="fa fa-github"></i></a></p>
         </div>
-        <br>
-        <div class="card">
-                <h4 id="php">PHP</h4>
-                <h1>Troca Kid's</h1>
-                <h3 style="color: grey">E-commerce</h3>
-                <p>Comming soon...
-                </p>
-                <p><a href="#">See it on GIT &nbsp;<i class="fa fa-github"></i></a></p>
-            </div>
     </div>
 
 </body>
